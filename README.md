@@ -21,4 +21,12 @@ AFINN-96: 1468 palabras y frases únicas en 1480 líneas. Tenga en cuenta que ha
 se encuentra enteramente en orden alfabético.
 
 
-La versión en español de este diccioario se encuentra en el siguiente [link] (https://raw.githubusercontent.com/jboscomendoza/rpubs/master/sentimientos_afinn/lexico_afinn.en.es.csv)
+La versión en español de este diccioario se encuentra en el siguiente[link](https://raw.githubusercontent.com/jboscomendoza/rpubs/master/sentimientos_afinn/lexico_afinn.en.es.csv)
+Para descargarlo directamente desde R  y luego leerlo
+
+
+download.file("https://raw.githubusercontent.com/jboscomendoza/rpubs/master/sentimientos_afinn/lexico_afinn.en.es.csv",
+              "lexico_afinn.en.es.csv")
+ afinn_spanish <- read.csv("lexico_afinn.en.es.csv", stringsAsFactors = F, fileEncoding = "latin1") %>% 
+tbl_df()
+
