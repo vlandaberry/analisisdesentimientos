@@ -9,3 +9,4 @@ La libreria tidy text tiene algunos diccionarios en inglés que vienen por defec
 
 \begin{itemize}
 \item \textbf{AFFIN} from Finn Årup Nielsen. 
+\end{itemize}
