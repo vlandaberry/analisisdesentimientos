@@ -1,6 +1,6 @@
 # analisisdesentimientos
-En este repositorio se agrupan distintos diccionarios que pueden ser utilizados para el análisis de sentimientos.  En particular me interesa nuclear 
-los distintos diccionarios que se van desarrollado para su posterior uso y la fuente.
+En este repositorio se agrupan distintos diccionarios que pueden ser utilizados para el análisis de sentimientos. En particular me interesa nuclear 
+los distintos diccionarios que se van desarrollado para su posterior uso y la fuente. El desarrollo de diccionarios en idioma español no es tan frecuente como los de idioma inglés. Una alternativa que ha surgido recientemente es la de traducir los diccionarios existentes de inglés a español utilizando APIs como google translator. Si bien la traducción directa tiene algunas limitaciones, es una alternativa sencilla para obtener diccionarios en idioma español. 
 
 
 ## Tidytext libraries (English)
@@ -22,11 +22,20 @@ se encuentra enteramente en orden alfabético.
 
 
 La versión en español de este diccioario se encuentra en el siguiente[link](https://raw.githubusercontent.com/jboscomendoza/rpubs/master/sentimientos_afinn/lexico_afinn.en.es.csv)
-Para descargarlo directamente desde R  y luego leerlo
-
+Para descargarlo directamente desde R  y luego leerlo alcaza con correr las siguientes lineas de código:
 
 download.file("https://raw.githubusercontent.com/jboscomendoza/rpubs/master/sentimientos_afinn/lexico_afinn.en.es.csv",
               "lexico_afinn.en.es.csv")
  afinn_spanish <- read.csv("lexico_afinn.en.es.csv", stringsAsFactors = F, fileEncoding = "latin1") %>% 
 tbl_df()
+
+
+** BING dictionary**
+Bing fue desarrollado por  Bing Liu y colaboradores. Viene en inglés y se puede obtener directamente en R desde la librería tidytext  a travès de get_sentiments("bing"). 
+Contiene un total de  6786 palabras clasificadas en positivas o negativas. 
+
+Para obtener la traducción al español se utilizó la API de google translate y se obtuvo de esta forma el diccionario. 
+
+
+
 
