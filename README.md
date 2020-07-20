@@ -30,12 +30,20 @@ download.file("https://raw.githubusercontent.com/jboscomendoza/rpubs/master/sent
 tbl_df()
 
 
-** BING dictionary**
+**BING dictionary**
 Bing fue desarrollado por  Bing Liu y colaboradores. Viene en inglés y se puede obtener directamente en R desde la librería tidytext  a travès de get_sentiments("bing"). 
 Contiene un total de  6786 palabras clasificadas en positivas o negativas. 
 
-Para obtener la traducción al español se utilizó la API de google translate y se obtuvo de esta forma el diccionario. 
+Para obtener la traducción al español se utilizó la API de google translate y se obtuvo de esta forma el diccionario. El diccionario con la traducción al español se encuentra en el archivo bing_spa.csv.
 
+
+**NRC dictionary**
+Desarrollado por Saif Mohammad y Peter Turney. El diccionario en su version ingles viene en la librerıa tidytext. Es una lista de palabras y su asociacion con 8 emociones basicas (enojo, miedo,anticipaci ́on, confianza, sopresa, tristeza, alegr ́ıa y disgusto) y dos sentimientos:negativo y positivo.Al igual que para el diccionario bing utilizando la API de google translator y elpaquete translateR traduje el diccionario. Pueden encontrar el diccionario traducido en nrc_spa.csv
+
+
+**Loughran and McDonald (2011)**
+
+Diccionario que contiene 4150 palabras que se utilizan para anàlisis de textos financieros. Las palabras se pueden categorizar en 6 tipos "negativo" "positivo" "incertidumbre" "litigioso" "restrictivo" "superfluo". La traducción del diccionaro en español la pueden encontrar en lough_spa.csv
 
 
 
